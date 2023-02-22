@@ -12,6 +12,7 @@ function Navigation()
             <Link className="navlink" to="/unicorn">Find next unicorn stock</Link>
             <Link className="navlink" to="/admin">Admin Dashboard</Link>
             <Link className="navlink" to="/about">About</Link>
+            <Link className="navlink" to="/minigame">Minigame</Link>
         </div>
     )
 }

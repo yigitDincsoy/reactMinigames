@@ -4,7 +4,6 @@
     align-items: center;
     justify-content: center;
     background-color: buttonface;
-
 }
 
 
@@ -71,17 +70,22 @@
 
 .homepage p
 {
-    margin-left:10vw;
-    padding-top:20px;
-    width:40vw;
+    /* margin-left:10vw;
+    padding-top:20px; */
+    width:50vw;
     font-size: x-large;
     font-family: 'Kanit', sans-serif;
 }
 
 
 .helloMessage{
-  color: white;
-  text-shadow: 1px 1px 5px black;
+    width: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    color: white;
+    text-shadow: 1px 1px 5px black;
 }
 
 .w
@@ -152,5 +156,9 @@
     margin-right: 10px;
   }
 
+  /* Unique CSS */
+  .div_wgrd_total {
+    display: flex;
+    justify-content: space-around;
+  }
 
-  

@@ -4,6 +4,7 @@ import Navigation from './components/Navigation'
 import Header from './components/Header'
 import Home from './components/Home'
 import About from './components/About'
+import Minigame from './components/Minigame'
 import Countries from './components/Countries'
 import CountryDetails from './components/CountryDetails'
 import Admin from './components/Admin'
@@ -24,6 +25,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home/>}/>
             <Route path="/about" element={<About/>}/>
+            <Route path="/minigame" element={<Minigame/>}/>
             <Route path="/unicorn" element={<About/>}/>
             <Route path="/countries" element={<Countries/>}>
               <Route path="details/:countryname" element={<CountryDetails/>}/>
