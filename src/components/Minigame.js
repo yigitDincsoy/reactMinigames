@@ -7,7 +7,8 @@ function Minigame()
  const storyEvents = {
     inflation:"😔 Because of the ongoing inflation, you just lost some purchasing power!)", 
     medicalemergency:"😔 Oh no! You had to see a doctor and your insurance denied your claim. Sorry about that.", 
-    bonus:"😊 Your boss gave you a cookie & 5$ GENERICMART gift card for making 50.000.000$ for the company"};
+    bonus:"😊 Your boss gave you a cookie & 5$ GENERICMART gift card for making 50.000.000$ for the company",
+};
 
     /*Scripts*/
     function scr_work() {
@@ -34,6 +35,7 @@ function Minigame()
             set_eventTriggered(true);
             set_mentalStatusEmoji("😐")
         }
+
 
         if (mgTimer === 25) {
             set_mgMoney(mgMoney-10000);
@@ -73,22 +75,32 @@ function Minigame()
 	justify-content: flex-start;
 	align-items: center;
 
-    >p{
-    padding: 10px;
-    };
-
     >button{
+    background-color: white;
+    color: black;
+    font-family: 'Kanit', sans-serif;
+    font-size: larger;
     width: 20%;
     padding: 10px;
+    cursor: pointer;
     };
 
+    & .infoArea {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    }
+
     & .minigameSlogan {
+    text-align: center;
     font-family: 'Kanit', sans-serif;
     padding: 20px;
     background-color: black;
     }
 
     & .mgMoneyArea {
+    border: 5px inset black;
     text-align: center;
     width: 15%;
     background: green; 
@@ -99,12 +111,14 @@ function Minigame()
     text-align: center;
     width: 15%;
     background: blue; 
+    border: 5px inset black;
     }
 
     & .mgHealthArea {
     text-align: center;
     width: 15%;
     background: red; 
+    border: 5px inset black;
     }
 
     & .eventArea {
@@ -136,13 +150,17 @@ function Minigame()
     return(
         <MinigameOuter>
         <MinigameContent>
-            <h5 className="minigameSlogan">Play our game to have a chance to win 1 year of premium membership! </h5>
-            <h5>💸 never ending grind 💸</h5>
+            <h5 className="minigameSlogan">💸 NEVER ENDING GRIND 💸<br/> 
+            Play our game to have a chance to win 1 year of premium membership! </h5>
+            
             <h5>Mental Status: {mentalStatusEmoji} </h5>
             <br/>
-            <p className="mgMoneyArea">Your Savings: {mgMoney}$</p>
-            <p className="mgAgeArea">Your Age: {mgAge}</p>
-            <p className="mgHealthArea">Your Health: {mgHealth}%</p>
+
+            <div className="infoArea">
+            <p className="mgMoneyArea"><strong>Your Savings:</strong> {mgMoney}$</p>
+            <p className="mgAgeArea"><strong>Your Age:</strong> {mgAge}</p>
+            <p className="mgHealthArea"><strong>Your Health:</strong> {mgHealth}%</p>
+            </div>
 
             <br/>
             {mgHealth>1 ? 
