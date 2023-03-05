@@ -1,0 +1,19 @@
+{
+
+    "productionUnits": {
+    "Peasant": {
+        "cost": 40,
+        "food_production": 5
+    },
+
+  "Potato Farm": {
+        "cost": 390,
+        "food_production": 60
+    },
+
+  "Windmill": {
+        "cost": 3500,
+        "food_production": 750
+    }
+}
+}

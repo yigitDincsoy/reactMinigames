@@ -1,0 +1,56 @@
+/* Base Grids */
+.container {
+    display: grid; 
+    grid-template-columns: 0.6fr 1fr 0.6fr; 
+    grid-template-rows: 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "a1_left a1_mid a1_right"; 
+  }
+
+  .a1_left { 
+    grid-area: a1_left; 
+    background-color: bisque;
+
+}
+  
+.a1_mid { 
+    grid-area: a1_mid;
+    background-color: gray;
+    text-align: center;
+ }
+
+ .informationArea {
+    border: 5px solid black;
+    background-color: aliceblue;
+    font-weight: bolder;
+    width: 50%;
+    margin: auto;
+    text-align: center;
+ }
+
+ .incomeArea {
+   border: 5px solid black;
+   background-color: rgba(255, 255, 255, 0.12);
+   font-weight: bolder;
+   width: 50%;
+   margin: auto;
+   text-align: center;
+}
+  
+ #gameTitle {
+    font-weight: bolder;
+ }
+
+ .a1_right { 
+    grid-area: a1_right; 
+    background-color: burlywood;
+    text-align: center;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#forageButton {margin-bottom: 20px;}
+#deerEmoji {font-size: 4rem;}

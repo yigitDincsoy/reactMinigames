@@ -1,50 +1,22 @@
-import styled from "styled-components";
+import './Home.css';
 
 function Home()
 {
     return(
         <main className="homepage">
             <div className="helloMessage">
-            <p>Welcome to hire.cat 🐈, where you can hire digital artists, software developers, music creators and more!</p>
+                <div id="textArea">
+            <p>Hello, my name is Yiğit! <em>(pron. yit) </em></p>
+            <p>I am a junior software developer in Halifax, NS and I am currently looking for <span id="coolText">full-time employment.</span></p>
+            <p>On this website (work in-progress) you can find some of my React based web game prototypes.</p>
+            <p>1. Life Simulator</p>
+            <p>2. Medieval Estate Simulator</p>
+            <p>You can also find my resume. Thanks for visiting!</p>
             </div>
-            <div className="div_wgrd_total">
-                <WGRD_UNIT name="Artists" desc= "Take a look at our artists" background="orange"/>
-                <WGRD_UNIT name="Developers" desc= "Our skilled developers" background="green"/>
-                <WGRD_UNIT name="Music Creators" desc= "Our independent musicians" background="blue"/>
-                <WGRD_UNIT name="Others" desc= "Others" background="red"/>
             </div>
+            
         </main>
     )
 }
-
-
-function WGRD_UNIT(props) {
-    
-    const Content = styled.div`
-    color: white;
-    background-color: ${props.background};
-    width: 20%;
-    display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-    `;
-
-    const SmallerContent = styled.p`
-    color: black;
-    text-align: center;
-    font-size: 5px;
-    `;
-
-    return(
-       <Content>
-       <h1>{props.name}</h1> 
-       <SmallerContent>{props.desc}</SmallerContent>
-       </Content>
-    )
-}
-
-
-
 
 export default Home;

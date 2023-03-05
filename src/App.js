@@ -15,7 +15,6 @@ function App() {
           <Header/>
           <Navigation/>
           
-          //
           <Routes>
             <Route path="*" element={<Nopage/>}/>
             <Route path="/" element={<Home/>}/>

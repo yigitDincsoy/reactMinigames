@@ -1,4 +1,3 @@
-import AuthNav from "./Auth/AuthNav";
 
 
 function Header()
@@ -6,8 +5,7 @@ function Header()
     return(
         <header>
             <div className="myheader">
-           Hire.cat
-            <AuthNav/>
+            Yigit Dincsoy
             </div>
         </header>
     )
