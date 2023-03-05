@@ -3,8 +3,6 @@ import styled from "styled-components";
 import React, { useState, useEffect } from 'react';
 
 
-
-
 function Clicker() //REQ: Functional Component 2/3
 {
   //LOGIC
@@ -33,12 +31,7 @@ function Clicker() //REQ: Functional Component 2/3
   //Starting calls
  
 
-  //Scripts
-  function scr_harvest() {
-    console.log("heyyo")
-
-  }
-
+  //Script
 
   function scr_forage() {
     set_food(food+1);

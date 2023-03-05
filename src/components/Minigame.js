@@ -102,10 +102,8 @@ function scr_work() {
 
         set_mgTimer(mgTimer+1);
         set_mgMoney(mgMoney+1000);
-        set_eventTriggered(false);
-        
        
-
+        
         if (mgTimer % 3 === 0) {
             set_mgAge(mgAge+1);
             set_mgHealth(mgHealth-5); 
