@@ -3,7 +3,7 @@ import { BrowserRouter,Routes,Route } from 'react-router-dom'
 import Navigation from './components/Navigation'
 import Header from './components/Header'
 import Home from './components/Home'
-import Resume from './components/Resume'
+
 import Clicker from './components/Clicker/Clicker'
 import Minigame from './components/Minigame'
 import Nopage from './components/Nopage'
@@ -18,7 +18,7 @@ function App() {
           <Routes>
             <Route path="*" element={<Nopage/>}/>
             <Route path="/" element={<Home/>}/>
-            <Route path="/resume" element={<Resume/>}/>
+        
             <Route path="/minigame" element={<Minigame/>}/>
             <Route path="/clicker" element={<Clicker/>}/>   
           </Routes>

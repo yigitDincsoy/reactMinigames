@@ -5,8 +5,7 @@ function Header()
     return(
         <header>
             <div className="myheader">
-            Yigit Dincsoy
-            </div>
+Minigame Examples            </div>
         </header>
     )
 }
